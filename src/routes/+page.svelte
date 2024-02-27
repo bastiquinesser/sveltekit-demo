@@ -5,8 +5,9 @@
 </script>
 
 {#await promise}
-	<span class="loading loading-ball loading-lg" />
+	<center><span class="loading loading-ball loading-lg" /></center>
 {:then result}
+	<center><h1>Country List</h1></center>
 	<ul>
 		{#each result.data as country}
 			<li>{country.name}</li>
