@@ -5,7 +5,11 @@
 </script>
 
 {#await promise}
-	<div>Loading...</div>
+	<span class="loading loading-ball loading-lg" />
 {:then result}
-	<div>{JSON.stringify(result)}</div>
+	<ul>
+		{#each result.data as country}
+			<li>{country.name}</li>
+		{/each}
+	</ul>
 {/await}
