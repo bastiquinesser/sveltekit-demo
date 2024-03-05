@@ -2,7 +2,7 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@supabase/supabase-js':
-    specifier: ^2.39.7
+    specifier: github:supabase/supabase-js
     version: 2.39.7
 
 devDependencies:
