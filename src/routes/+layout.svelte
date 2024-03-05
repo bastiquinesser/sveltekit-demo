@@ -1,6 +1,8 @@
 <script>
+	import { onMount } from 'svelte';
+	import { supabase } from '$lib/supabase';
 	import '../app.postcss';
-	import { theme } from '$lib/store.js';
+	import { session, theme } from '$lib/store.js';
 </script>
 
 <div data-theme={$theme} class="min-h-screen p-3">

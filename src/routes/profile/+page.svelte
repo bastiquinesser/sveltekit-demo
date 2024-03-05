@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import type { AuthSession } from '@supabase/supabase-js';
 	import { supabase } from '$lib/supabase';
+	import { session } from '$lib/store';
 
 	export let session: AuthSession;
 
@@ -17,7 +18,7 @@
 	async function getProfile() {
 		try {
 			loading = true;
-			const { user } = session;
+			const { user } = $session;
 
 			const { data, error, status } = await supabase
 				.from('profiles')
@@ -68,7 +69,7 @@
 		}
 	}
 </script>
-
+{#if $session}
 <form on:submit|preventDefault={updateProfile} class="form-widget">
 	<div>Email: {session.user.email}</div>
 	<div>
