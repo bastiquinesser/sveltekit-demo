@@ -14,7 +14,7 @@
 		getProfile();
 	});
 
-	const getProfile = async () => {
+	async function getProfile() {
 		try {
 			loading = true;
 			const { user } = session;
@@ -39,9 +39,9 @@
 		} finally {
 			loading = false;
 		}
-	};
+	}
 
-	const updateProfile = async () => {
+	async function updateProfile() {
 		try {
 			loading = true;
 			const { user } = session;
@@ -66,7 +66,7 @@
 		} finally {
 			loading = false;
 		}
-	};
+	}
 </script>
 
 <form on:submit|preventDefault={updateProfile} class="form-widget">
