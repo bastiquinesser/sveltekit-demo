@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { supabase } from '$lib/supabase';
-
 	let loading = false;
 	let email = '';
 
