@@ -1,5 +1,5 @@
 <script>
-	import { supabase } from '$lib/supasbase';
+	import { supabase } from '$lib/supabase';
 
 	let promise = supabase.from('countries').select();
 </script>
