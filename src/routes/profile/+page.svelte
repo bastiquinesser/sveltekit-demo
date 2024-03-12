@@ -70,10 +70,11 @@
 </script>
 
 {#if $session}
-	<form>
+	<form
 		on:submit|preventDefault={updateProfile}
+		class="max-w-lg mx-auto bg-white rounded-lg shadow-md p-8 my-8"
+	>
 		<Avatar size={150} bind:url={avatarUrl} on:upload={updateProfile} />
-		class="max-w-lg mx-auto bg-white rounded-lg shadow-md p-8 my-8" >
 		<div class="mb-4">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email:</label>
 			<div class="text-gray-900">{$session.user.email}</div>
