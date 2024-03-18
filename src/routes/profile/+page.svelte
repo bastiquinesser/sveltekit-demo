@@ -124,8 +124,8 @@
 		padding: 20px;
 		border-radius: 10px;
 		text-align: center;
-		background-color: #fff3cd;
-		border: 1px solid #ffeeba;
+		background-color: #1100ff;
+		border: 1px solid #ffffff;
 	}
 
 	.alert svg {

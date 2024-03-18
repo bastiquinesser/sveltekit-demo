@@ -41,15 +41,15 @@
 {/if}
 
 <div class="flex justify-center items-center h-screen">
-	<div class="form-container bg-white p-8 rounded-lg shadow-md">
+	<div class="form-container bg-black p-8 rounded-lg shadow-md">
 		<div class="text-center">
-			<h1 class="text-3xl font-bold mb-4">Supabase + Svelte</h1>
-			<p class="text-gray-600 mb-6">Sign in via magic link with your email below</p>
+			<h1 class="text-blue text-3xl font-bold mb-4">Supabase + Svelte</h1>
+			<p class="text-white-600 mb-6">Sign in via magic link with your email below</p>
 		</div>
 
 		<form on:submit|preventDefault={handleLogin}>
 			<div class="mb-4">
-				<label for="email" class="block text-gray-700">What is your e-mail?</label>
+				<label for="email" class="block text-white-700">What is your e-mail?</label>
 				<input
 					id="email"
 					type="email"
@@ -84,8 +84,8 @@
 		padding: 20px;
 		border-radius: 10px;
 		text-align: center;
-		background-color: #d1fae5;
-		border: 1px solid #10b981;
+		background-color: #1100ff;
+		border: 1px solid #ffffff;
 	}
 
 	.alert svg {

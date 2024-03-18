@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { supabase } from '$lib/supabase';
-	import '../app.postcss';
+	import '../app.css';
 	import { session, theme } from '$lib/store.js';
 </script>
 
