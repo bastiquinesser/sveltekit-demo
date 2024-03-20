@@ -50,10 +50,29 @@
 {#await promise}
 	<center><span class="loading loading-ball loading-lg" /></center>
 {:then result}
-	<center><h1>Country List</h1></center>
+	<h1>Country list</h1>
 	<ul>
 		{#each result.data as country}
 			<li>{country.name}</li>
 		{/each}
 	</ul>
 {/await}
+
+<style>
+	h1 {
+		color: rgb(255, 0, 204);
+	}
+
+	h2 {
+		color: hotpink;
+	}
+	button {
+		background-color: hotpink;
+	}
+
+	input {
+		background-color: rgba(0, 0, 0, 0.144);
+		border: 1px solid hotpink;
+		color: rgb(255, 0, 204);
+	}
+</style>
