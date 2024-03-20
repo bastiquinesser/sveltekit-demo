@@ -8,8 +8,6 @@ session.subscribe(value => {
 
 export const theme = writable(localStorage.theme || 'synthwave');
 
-theme.subscribe(value => {
-    localStorage.theme = value
-});
+theme.subscribe(value => {localStorage.theme = value});
 
 
