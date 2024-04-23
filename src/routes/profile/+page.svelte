@@ -72,7 +72,7 @@
 {#if $session}
 	<form
 		on:submit|preventDefault={updateProfile}
-		class="max-w-lg mx-auto bg-white rounded-lg shadow-md p-8 my-8"
+		class="max-w-lg mx-auto bg-black rounded-lg shadow-md p-8 my-8"
 	>
 		<Avatar size={150} bind:url={avatarUrl} on:upload={updateProfile} />
 		<div class="mb-4">

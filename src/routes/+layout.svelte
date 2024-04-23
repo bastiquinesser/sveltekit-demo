@@ -3,7 +3,6 @@
 	import { supabase } from '$lib/supabase';
 	import '../app.css';
 	import { session, theme } from '$lib/store.js';
-	import { ALERT_TYPE, displayAlert, session, theme } from '$lib/store.js';
 	onMount(() => {
 		supabase.auth.getSession().then(({ data }) => {
 			$session = data.session;
@@ -13,10 +12,6 @@
 			$session = _session;
 		});
 	});
-
-	function defaultAlert() {
-		displayAlert('', ALERT_TYPE.NONE);
-	}
 </script>
 
 <div data-theme={$theme} class="min-h-screen p-3">
